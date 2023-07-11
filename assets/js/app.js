@@ -48,6 +48,7 @@ function loaders() {
         spinner.setAttribute('src', 'assets/img/mail.gif')
         setTimeout(function () {
             spinner.setAttribute('style', 'display:none')
+            form.reset()
         }, 3000)
     }, 3000)
 }
