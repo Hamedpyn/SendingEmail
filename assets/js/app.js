@@ -42,10 +42,12 @@ function formValidation() {
     }
 }
 
-function loaders(){
-    spinner.setAttribute('style','display:block')
-    setTimeout(()=>{
-        spinner.style.display = 'none'
-        spinner.setAttribute('src','assets/img/mail.gif')
-    },3000)
+function loaders() {
+    spinner.style.display = 'block'
+    setTimeout(function () {
+        spinner.setAttribute('src', 'assets/img/mail.gif')
+        setTimeout(function () {
+            spinner.setAttribute('style', 'display:none')
+        }, 3000)
+    }, 3000)
 }
