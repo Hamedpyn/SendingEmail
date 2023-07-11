@@ -45,6 +45,7 @@ function formValidation() {
 function loaders(){
     spinner.setAttribute('style','display:block')
     setTimeout(()=>{
-        spinner.setAttribute('style','display:none')
-    },7000)
+        spinner.style.display = 'none'
+        spinner.setAttribute('src','assets/img/mail.gif')
+    },3000)
 }
